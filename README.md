@@ -20,6 +20,7 @@ Create a meteor project folder, then copy the demo app into it
 <code>mkdir $METEOR_HOME/projects</code><br>
 <code>cd $METEOR_HOME/projects</code><br>
 <code>meteor create meteor-charts</code><br>
+<code>cd $METEOR_HOME/projects/meteor-charts</code><br>
 <code>meteor add charts</code><br>
 <code>cd (git clone directory of meteor-charts)</code><br>
 <code>cp meteor-charts/meteor-charts/* $METEOR_HOME/projects/meteor-charts  </code><br>
