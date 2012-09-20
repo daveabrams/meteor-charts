@@ -62,11 +62,11 @@ Charts use relative position sizing on the page, so the Handlebars template that
 <p>
 To change the sorting order or add more filtering to the Meteor collection, change the fetchDB function:
  <p>
-PieChart.fetchDB =  function() { return PieChart.find({},{sort : {x:-1}}).fetch(); }
+<code>PieChart.fetchDB =  function() { return PieChart.find({},{sort : {x:-1}}).fetch(); }</code><br>
 <p>
 To change options and legends, update the member:
 <p>
-PieChart.chartOptions 
+<code>PieChart.chartOptions </code><br>
 
 
 LICENSE
