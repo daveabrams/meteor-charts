@@ -58,7 +58,7 @@ FEATURES
 
 Line Chart, Pie Chart are implemented now.  Others will follow.
 <p>
-Charts use relative position sizing on the page, so the Handlebars template that specifies the chart has a <div tag in it with a width and height specified.  This becomes the location of the chart on the screen automatically.
+Charts use relative position sizing on the page, so the Handlebars template that specifies the chart has a <code> div style= height:400px;width:400px; </code> tag in it with a width and height specified.  This becomes the location of the chart on the screen automatically.
 <p>
 To change the sorting order or add more filtering to the Meteor collection, change the fetchDB function:
  <p>
