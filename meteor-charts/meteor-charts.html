@@ -1,0 +1,28 @@
+<head>
+  <title>Meteor-Charts</title>
+</head>
+
+<body>
+  <h1>Meteor-Charts</h1>
+   Pie Chart
+   {{> piechart}}
+  
+    <p>
+    Line Chart
+    {{> linechart}}
+ <p>
+</body>
+
+
+<template name="piechart">
+  <div style='height:400px;width:400px;'>
+  {{chart1}}
+  </div>
+</template>
+
+
+<template name="linechart">
+  <div style='height:400px;width:400px;'>
+  {{chart2}}
+  </div>
+</template>
