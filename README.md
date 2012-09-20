@@ -10,10 +10,10 @@ Vector graphics charting updates when a Meteor.Collection is changed.
 Installation
 ============
 Copy the 'charts' package into your meteor/packages folder
-
-mkdir $METEOR_HOME/packages/charts
-cp meteor-charts/packages/charts/* $METEOR_HOME/packages/charts/
-
+<br>
+<code>mkdir $METEOR_HOME/packages/charts</code><br>
+<code>cp meteor-charts/packages/charts/* $METEOR_HOME/packages/charts/</code><br>
+<p>
 
 Create a meteor project folder, then copy the demo app into it
 
