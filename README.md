@@ -71,7 +71,7 @@ PieChart.chartOptions
 
 LICENSE
 =======
-Copyright (c) 2012  Dave Abrams  (dave at daveab.com)
+Copyright (c) 2012  Dave Abrams  (dave at <a href="http://www.daveab.com/">daveab.com</a>)
 
 MIT License (MIT)
 http://opensource.org/licenses/MIT
