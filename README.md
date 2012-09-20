@@ -17,39 +17,39 @@ cp meteor-charts/packages/charts/* $METEOR_HOME/packages/charts/
 
 Create a meteor project folder, then copy the demo app into it
 
-mkdir $METEOR_HOME/projects
-cd $METEOR_HOME/projects
-meteor create meteor-charts
-meteor add charts
-cd (git clone directory of meteor-charts)
-cp meteor-charts/meteor-charts/* $METEOR_HOME/projects/meteor-charts  
+<code>mkdir $METEOR_HOME/projects</code><br>
+<code>cd $METEOR_HOME/projects</code><br>
+<code>meteor create meteor-charts</code><br>
+<code>meteor add charts</code><br>
+<code>cd (git clone directory of meteor-charts)</code><br>
+<code>cp meteor-charts/meteor-charts/* $METEOR_HOME/projects/meteor-charts  </code><br>
 
 
 DEMO
 ====
 
-Start the demo project
-cd $METEOR_HOME/projects/meteor-charts/
-meteor
+Start the demo project<br>
+<code>cd $METEOR_HOME/projects/meteor-charts/</code><br>
+<code>meteor</code><br>
 
-Open a browser to the default page:
+Open a browser to the default page:<br>
 
-http://localhost:3000/
+<a href="http://localhost:3000/">http://localhost:3000/</a>
 
 
 Add Initial Data
 ================
 
 View, Developer, Javascript Console, Console tab
-
-PieChart.insert({ name:'Chicago', x:5});
-PieChart.insert({ name:'New York', x:4});
-PieChart.insert({ name:'Toronto', x:7});
-
-LineChart.insert({ name:'Toronto', x:7, y:5});
-LineChart.insert({ name:'Seattle', x:1, y:10});
-LineChart.insert({ name:'Dallas', x:2, y:15});
-
+<br>
+<code>PieChart.insert({ name:'Chicago', x:5});</code><br>
+<code>PieChart.insert({ name:'New York', x:4});</code><br>
+<code>PieChart.insert({ name:'Toronto', x:7});</code><br>
+<br>
+<code>LineChart.insert({ name:'Toronto', x:7, y:5});</code><br>
+<code>LineChart.insert({ name:'Seattle', x:1, y:10});</code><br>
+<code>LineChart.insert({ name:'Dallas', x:2, y:15});</code><br>
+<br>
 Watch the charts update on the fly in different browsers when you add new elements.
 
 
@@ -57,15 +57,15 @@ FEATURES
 ========
 
 Line Chart, Pie Chart are implemented now.  Others will follow.
-
+<p>
 Charts use relative position sizing on the page, so the Handlebars template that specifies the chart has a <div tag in it with a width and height specified.  This becomes the location of the chart on the screen automatically.
-
+<p>
 To change the sorting order or add more filtering to the Meteor collection, change the fetchDB function:
- 
+ <p>
 PieChart.fetchDB =  function() { return PieChart.find({},{sort : {x:-1}}).fetch(); }
-
+<p>
 To change options and legends, update the member:
-
+<p>
 PieChart.chartOptions 
 
 
